@@ -1,0 +1,193 @@
+.swiper-pagination-switch,.swiper-visible-switch {
+  background: url(../../img/pc/switch.png) center center no-repeat;
+} 
+.swiper-active-switch {
+  background: url(../../img/pc/switch_active.png) center center no-repeat;
+}
+
+.ticket_base .getTicket a:first-child+a {
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	width: 90px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 7px auto 0 16px;
+}
+.ticket_blue .getTicket a:first-child+a {
+	background-color: #3ac2dd;
+}
+.ticket_blue .getTicket a:first-child+a:hover,
+.ticket_blue .getTicket a:first-child+a:active {
+	background-color: #2eb1ce;
+}
+.ticket_darkblue .getTicket a:first-child+a {
+	background-color: #03ade5;
+}
+.ticket_darkblue .getTicket a:first-child+a:hover,
+.ticket_darkblue .getTicket a:first-child+a:active {
+	background-color: #0096c7;
+}
+.ticket_green .getTicket a:first-child+a {
+	background-color: #70b71d;
+}
+.ticket_green .getTicket a:first-child+a:hover,
+.ticket_green .getTicket a:first-child+a:active {
+	background-color: #5fa616;
+}
+.ticket_orange .getTicket a:first-child+a {
+	background-color: #ff885d;
+}
+.ticket_orange .getTicket a:first-child+a:hover,
+.ticket_orange .getTicket a:first-child+a:active {
+	background-color: #ee5016;
+}
+.ticket_purple .getTicket a:first-child+a {
+	background-color: #6a51ca;
+}
+.ticket_purple .getTicket a:first-child+a:hover,
+.ticket_purple .getTicket a:first-child+a:active {
+	background-color: #5641a7;
+}
+.ticket_yellow .getTicket a:first-child+a {
+	background-color: #dab008;
+}
+.ticket_yellow .getTicket a:first-child+a:hover,
+.ticket_yellow .getTicket a:first-child+a:active {
+	background-color: #c7a002;
+}
+
+.nav .allnav>li:first-child {
+	background: url(../../img/pc/icon_fruit.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child+li {
+	background: url(../../img/pc/icon_pumpkin.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child+li+li {
+	background: url(../../img/pc/icon_meat.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child+li+li+li {
+	background: url(../../img/pc/icon_lobster.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child+li+li+li+li  {
+	background: url(../../img/pc/icon_noodles.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child+li+li+li+li+li {
+	background: url(../../img/pc/icon_watermelon.png) 52px center no-repeat;
+}
+.nav .allnav>li:first-child:hover,
+.nav .allnav>li:first-child.hover {
+	background: url(../../img/pc/icon_fruit_hover.png) 52px center no-repeat #FFFFFF;
+}
+.nav .allnav>li:first-child+li:hover,
+.nav .allnav>li:first-child+li:hover {
+	background: url(../../img/pc/icon_pumpkin_hover.png) 52px center no-repeat #FFFFFF;
+}
+.nav .allnav>li:first-child+li+li:hover,
+.nav .allnav>li:first-child+li+li:hover {
+	background: url(../../img/pc/icon_meat_hover.png) 52px center no-repeat #FFFFFF;
+}
+.nav .allnav>li:first-child+li+li+li:hover,
+.nav .allnav>li:first-child+li+li+li:hover {
+	background: url(../../img/pc/icon_lobster_hover.png) 52px center no-repeat #FFFFFF;
+}
+.nav .allnav>li:first-child+li+li+li+li:hover,
+.nav .allnav>li:first-child+li+li+li+li:hover {
+	background: url(../../img/pc/icon_noodles_hover.png) 52px center no-repeat #FFFFFF;
+}
+.nav .allnav>li:first-child+li+li+li+li+li:hover,
+.nav .allnav>li:first-child+li+li+li+li+li:hover {
+	background: url(../../img/pc/icon_watermelon_hover.png) 52px center no-repeat #FFFFFF;
+}
+
+.hotticket .ticket-list li:first-child+li,.hotticket .ticket-list li:first-child+li+li+li+li,.hotticket .ticket-list li:first-child+li+li+li+li+li+li+li,.hotticket .ticket-list li:first-child+li+li+li+li+li+li+li+li+li+li,.hotticket .ticket-list li:first-child+li+li+li+li+li+li+li+li+li+li+li+li+li {
+	margin: 10px 11px;
+}
+
+.main section.ticket header .tags span{ 
+	display:none;
+}
+
+.main section.ticket:first-child header .tags { 
+	background: url(../../img/pc/tags_fruit.png) center center no-repeat;
+}
+
+.main section.ticket:first-child+section.ticket header .tags { 
+	background: url(../../img/pc/tags_greens.png) center center no-repeat;
+}
+
+.main section.ticket:first-child+section.ticket+section.ticket header .tags { 
+	background: url(../../img/pc/tags_meats.png) center center no-repeat;
+}
+
+.main section.ticket:first-child+section.ticket+section.ticket+section.ticket header .tags { 
+	background: url(../../img/pc/tags_seaFood.png) center center no-repeat;
+}
+
+.main section.ticket:first-child+section.ticket+section.ticket+section.ticket+section.ticket header .tags { 
+	background: url(../../img/pc/tags_rice.png) center center no-repeat;
+}
+
+.main section.ticket:first-child+section.ticket+section.ticket+section.ticket+section.ticket+section.ticket header .tags { 
+	background: url(../../img/pc/tags_material.png) center center no-repeat;
+}
+ 
+
+.payment .steps ul li a.circle { 
+	background: url(../../img/pc/steps_bg.png) center center no-repeat; 
+}
+
+.payment .steps ul li.active a.circle {
+	background: url(../../img/pc/steps_bg_active.png) center center no-repeat; 
+ 
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:first-child+div{
+	width: 120px;
+	display: block; 
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap; 
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:first-child+div+div{
+	width: 190px;  
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:first-child+div+div+div{
+	width: 100px; 
+}
+
+.userCenter>.right .list.notuse ul li>div:first-child+div{
+	width: 160px; 
+}
+
+.userCenter>.right .list.notuse ul li>div:first-child+div+div{
+	width: 100px;  
+}
+
+.userCenter>.right .list.notuse ul li>div:first-child+div+div+div{
+	width: 150px; 
+} 
+
+.userCenter>.right .list.used ul li>div:first-child+div{
+	width: 100px; 
+}
+
+.userCenter>.right .list.used  ul li>div:first-child+div+div{
+	width: 80px;  
+}
+
+.userCenter>.right .list.used  ul li>div:first-child+div+div+div{
+	width: 230px; 
+}
+
+.userCenter>.right.notice .list.redEnvelopes  ul li>div:first-child+div+div+div{
+	width: 95px; 
+}
+
+
+
+
+
+

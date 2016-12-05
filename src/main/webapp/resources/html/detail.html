@@ -1,0 +1,369 @@
+
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="../../resources/css/reset.css?__inline">
+<script src="../../resources/lib/jquery-2.1.3.min.js?__inline"></script>
+<script src="../../resources/lib/template.js?__inline"></script>
+<script src="../../resources/js/envi.js?__inline"></script>
+
+
+<style type="text/css">
+.w-product-image-new .detail-product-img {
+	position: relative;
+	display: block;
+	height: 194px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+	font-weight: lighter;
+	font: 14px "Droid Sans", "Droid Sans Fallback", "Helvetica Neue",
+		Helvetica, STHeiTi, sans-serif;
+}
+
+.w-product-image-new .detail-product-img .desc {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 29px;
+	line-height: 29px;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	font-weight: normal;
+}
+
+.w-detail-header {
+	position: absolute;
+	top: 17px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	z-index: 2;
+}
+
+.w-detail-header .arrow-wrap {
+	float: left;
+	margin-left: 12px;
+	background-image:
+		url(http://newebapp2.nuomi.bdimg.com/static/detail/widget/detail_header_new/img/fanhui@2x_f38f4ef.png);
+}
+
+.w-detail-header .icon {
+	width: 30px;
+	height: 30px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+}
+
+.w-product-desc-new .title {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #22222d;
+}
+
+.w-product-desc-new .desc {
+	margin-top: 11px;
+	line-height: 16px;
+	font-size: 13px;
+	color: #88888d;
+}
+
+.w-product-desc-new {
+	border: 0;
+	background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top, bottom, left top;
+	margin-bottom: 12px;
+	position: relative;
+	background: #fff;
+	padding: 13px 12px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.product-price {
+	margin-bottom: 12px;
+}
+
+.current-price {
+	color: #ff4978;
+	font-size: 14px;
+}
+
+.product-price .current-price .price-value {
+	font-size: 28px;
+	margin-right: 10px;
+}
+
+.product-price em {
+	font-style: normal;
+}
+
+.product-price .current-price {
+	color: #ff4978;
+}
+
+.price-value:before {
+	content: '￥';
+	float: left;
+	margin-top: 11px;
+	font-size: 15px;
+}
+
+.w-product-desc-new .product-related-info {
+	border: 0;
+	border-top: 1px solid #e5e5e5;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.clearfix::before,.clearfix::after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.w-product-desc-new .product-related-info .buy-num {
+	background-image:
+		url(http://newebapp1.nuomi.bdimg.com/static/detail/widget/product_desc_new/img/icon-yishou@2x_48ace58.png);
+}
+
+.w-product-desc-new .product-related-info .policy {
+	margin-top: 13px;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 20px;
+	width: 50%;
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	-webkit-background-size: 15px 15px;
+	background-size: 15px 15px;
+	color: #88888d;
+}
+
+.w-product-desc-new .product-related-info .remain-time {
+	background-image:
+		url(http://newebapp2.nuomi.bdimg.com/static/detail/widget/product_desc_new/img/icon-shengyu@2x_db3f9fc.png);
+}
+
+.w-rich-text {
+	margin: 0;
+	border: 0;
+	border-top: 1px solid #e0e0e0;
+	background-color: #fff;
+}
+
+.rich-title {
+	height: 13px;
+	padding: 10px 0 6px 12px;
+	background: #efefef;
+	border: 0;
+	line-height: 1;
+	font-size: 13px;
+	font-weight: 400;
+	color: #888;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.small-title {
+  height: 13px;
+  font-size: 13px;
+  line-height: 1;
+  color: #888;
+  background: #efefef;
+  font-weight: 400;
+  padding: 10px 0 6px 12px;
+}
+
+.rich-wrapper {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.rich-content {
+	padding: 10px;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 13px;
+	color: #666;
+	line-height: 1.5;
+	word-break: break-all;
+}
+
+.w-ugc-detail .ugc-preview {
+  display: block;
+  padding: 15px 12px;
+  line-height: 16px;
+  height: 16px;
+}
+
+.w-ugc-detail .ugc-preview .w-rate-star {
+  float: left;
+  height: 16px;
+  box-sizing: border-box;
+}
+
+.w-ugc-detail .ugc-preview {
+  display: block;
+  padding: 15px 12px;
+  line-height: 16px;
+  height: 16px;
+}
+
+.w-rate-star .rate-star-gray16 {
+  width: 104px;
+  height: 15px;
+}
+.w-rate-star .rate-star-gray {
+  display: inline-block;
+  background: url(http://newebapp0.nuomi.bdimg.com/static/common/widget/ugc_star/img/rate_star_gray_2f0efa5.png) no-repeat;
+  background-size: auto 100%;
+}
+
+.w-rate-star .rate-star-gray .rate-star-real {
+  width: 0;
+  height: 100%;
+  background: url(http://newebapp2.nuomi.bdimg.com/static/common/widget/ugc_star/img/rate_star_orange_2aa715f.png) no-repeat;
+  background-size: auto 100%;
+}
+
+.w-ugc-detail .ugc-preview .rate-score {
+  float: left;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #fe7e01;
+}
+
+.w-ugc-detail .ugc-preview .ugc-total {
+  float: right;
+  font-size: 14px;
+  color: #22222d;
+}
+
+ .buy-btn {
+  height: 34px;
+  width: 105px;
+  color: #fff;
+  background-color: #f63;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+  display: inline-block;
+}
+a{
+color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+	<header class="w-detail-header">
+		<a class="icon arrow-wrap" href="javascript:history.back()"></a>
+	</header>
+	<article>
+		<div class="w-product-image-new">
+			<a class="detail-product-img" href="#"> 
+			<script type="text/javascript">
+			
+				function toAlbum(){
+					window.location = '/orange/resources/html/album.html';
+				}
+				//根据网络状态以及用户屏幕分辨率决定获取合适的图片
+				(function () {
+				    var devicePixelRatio = window.devicePixelRatio;
+				    var img_src = null;
+				    var product_img_html = null;
+				    var is_wifi = parseInt('1',10);
+				    var net_type = parseInt('1', 10);
+				    if (isNaN(is_wifi)) {
+				        is_wifi = 0;
+				    }
+				    if (devicePixelRatio > 1) {
+				        if (is_wifi == 1) {
+				            img_src = "http:\/\/S0.nuomi.bdimg.com\/upload\/deal\/2014\/8\/V_L\/1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				        else if (net_type == 3){
+				            img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=80&size=w720&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				        else {
+				            img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=40&size=w720&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				    }
+				    else if (devicePixelRatio <= 1) {
+				        if (is_wifi == 1) {
+				            img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=100&size=w360&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				        else if (net_type == 3){
+				            img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=80&size=w360&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				        else {
+				            img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=40&size=w360&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				        }
+				    }
+				    else {
+				        img_src = "http:\/\/timg01.baidu-1img.cn\/timg?nuomiwebapp&quality=40&size=w360&sec=0&di=ff9773aedf027afcbc30100b60d8e31d&src=http%3A%2F%2FS0.nuomi.bdimg.com%2Fupload%2Fdeal%2F2014%2F8%2FV_L%2F1677522-48mrj5787u-18997229746751879.jpg";
+				    }
+				    product_img_html = "<img src='" + img_src + "' onclick='toAlbum();'/>";
+				    document.write(product_img_html);
+				})();
+				</script>
+				<div class="desc ns-track">
+					<span>点击图片查看相册</span>
+				</div>
+			</a>
+		</div>
+		<div class="w-product-desc-new">
+			<div class="product-title">
+				<h3 class="title">陶然居代金券</h3>
+				<p class="desc">仅售79元，价值100元代金券！可叠加使用！周六周日需提前24小时预约！</p>
+			</div>
+			<div class="product-price" style="display: -webkit-box;-webkit-box-pack: justify;">
+				<span class="current-price"><em class="price-value">79</em></span> 
+				<span class="original-price" ><del>20</del></span>
+				<span style="-webkit-box-flex: 1;-webkit-box-align: end; display: -webkit-box;"></span>
+				<a onclick="" href="/tuan/buy/8675554" class="buy-btn" style="color: #fff;">立即购买</a>
+			</div>
+			<div class="product-related-info clearfix">
+				<span class="policy buy-num">已售95409</span> <span
+					class="policy remain-time">剩余7天以上</span>
+			</div>
+		</div>
+		<div class="anchor-item anchor-tips">
+			<section class="w-rich-text">
+				<div class="rich-title j-block-title">消费提示</div>
+				<div class="rich-content rich-wrapper">
+					1、糯米券有效期为：2014年06月12日-2015年04月12日
+					2、营业时间：沁园（西郊店）：08:30-17:30，其他门店：09:00-20:00 3、无需预约，详情请咨询商家
+					4、沁园代金券有效期：2014-10-1至2015-12-31</div>
+			</section>
+		</div>
+		<div class="anchor-comment anchor-item">
+			<div class="small-title">用户评价</div>
+			<section class="w-ugc-detail" mon="area=ugcDetail">
+				<div class="ugc-preview clearfix">
+					<div class="w-rate-star">
+						<div class="rate-star-gray rate-star-gray16">
+							<div class="rate-star-real j-rate-star-real"
+								style="width: 96.8px;"></div>
+						</div>
+					</div>
+					<span class="rate-score"> 4.8 </span> <span class="ugc-total">2567人评价</span>
+				</div>
+		   </section>
+		</div>
+	</article>
+</body>
+</html>

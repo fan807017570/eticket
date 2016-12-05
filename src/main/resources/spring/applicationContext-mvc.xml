@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="   
+    http://www.springframework.org/schema/beans   
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd   
+    http://www.springframework.org/schema/context   
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/util 
+    http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+	<context:component-scan base-package="com.zteingenico.eticket.buyerportal.controller,com.zteingenico.eticket.buyerportal.services" />
+    	
+	<!-- 将freemarker配置文件封装为一个property对象 -->
+	<bean id="freemarkerConfiguration"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location"  value="classpath:freemarker.properties"/>
+	</bean>
+
+	<!--避免IE执行AJAX时,返回JSON出现下载文件，该转换器主要与@ResponseBody配合使用-->
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>text/html;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">  
+        <property name="messageConverters">  
+            <list>  
+                <ref bean="mappingJacksonHttpMessageConverter" />
+            </list>  
+        </property>
+    </bean>  
+	
+	<!-- 注册Annotation -->	
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+
+	<!-- 配置freeMarker的模板路径 -->
+	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="freemarkerSettings" ref="freemarkerConfiguration" />
+		<property name="templateLoaderPath">
+			<value>/WEB-INF/template/</value>
+		</property>
+	</bean>
+	
+    <bean id="freeMarkerViewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="order" value="2"/>
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.freemarker.FreeMarkerView" />
+		<property name="contentType" value="text/html; charset=utf-8" />
+		<property name="cache" value="true" />
+		<property name="suffix" value=".ftl" />
+		<property name="exposeRequestAttributes" value="true" />
+	</bean>
+	
+	<!--定义微信公众号的拦截器，用于获取用户的权限信息  -->
+	<mvc:interceptors>
+		<mvc:interceptor>  
+	        <mvc:mapping path="/view/weixin/*" />
+	        <bean class="com.zteingenico.eticket.buyerportal.interceptor.WeixinInterceptor"/>  
+	    </mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!--定义全局异常处理器  -->
+	<bean class="com.zteingenico.eticket.buyerportal.exception.ExceptionHandler"/>
+	<!--springmvc 文件上传  -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+	
+	<mvc:resources mapping="/resources/**" location="/resources/"/>
+	
+</beans>

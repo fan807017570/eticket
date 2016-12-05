@@ -1,0 +1,893 @@
+@charset "utf-8";
+/*领券专区 开始*/
+
+.swiper-container .pagination {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  margin-left:-50px;
+  bottom: 10px;
+  text-align:center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height:18px;
+  border-radius: 100%;
+  background: #000;
+  margin-right: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+  color:#ffffff;
+  font-size:12px;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #ff6831;
+} 
+
+.main {
+	width: 100%;
+	height: auto;
+	padding: 32px 0 80px;
+	background: #f5f5f5;
+}
+.main.hot {
+	background: #FFFFFF;
+}
+.ticket {
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+	border-top-left-radius: 10px;
+	margin-top: 28px;
+}
+.ticket header {
+	width: 100%;
+	height: 55px;
+	background: url(../../img/pc/header.png) center center no-repeat;
+	background-size: cover;
+	border-bottom: 1px solid rgb( 221, 221, 221);
+}
+.ticket header .title {
+	position: relative;
+	left: 65px;
+	top: 13px;
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	background: #ffc09d;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 18px;
+	padding-left: 43px;
+}
+.ticket header .title img {
+	position: absolute;
+	top: -7px;
+	left: 10px;
+}
+.ticket header .tags {
+	position: relative;
+	width: 65px;
+	height: 64px;
+	position: absolute;
+	right: -6px;
+	top: -6px;
+	background: url(../../img/pc/tags.png) center center no-repeat;
+}
+.ticket header .tags img{
+	position: relative;
+	width: 65px;
+	height: 64px; 
+}
+.ticket header .tags span {
+	display: block;
+	width: 55px;
+	color: #FFFFFF;
+	font-size: 13px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	/* IE 9 */
+	
+	-webkit-transform: rotate(45deg);
+	/* Safari and Chrome */
+	
+	position: absolute;
+	top: 18px;
+	left: 15px;
+}
+.ticket article {
+	overflow: hidden;
+	padding: 10px;
+}
+.ticket article .left img {
+	width: 240px;
+	height: 410px;
+}
+.ticket article .left .swiper-container-ad {
+	width: 240px;
+	height: 410px;
+} 
+.ticket article .left .swiper-container-ad .swiper-slide {
+	width: 240px;
+	height: 410px;
+	background-size: cover;
+}
+
+.ticket-list {
+	width: 739px;
+	padding-left: 20px;
+	padding-top: 5px;
+	overflow: hidden;
+}
+.ticket-list li {
+	padding: 10px 13px;
+	margin: 10px 14px;
+	float: left;
+	border: 4px solid #f4f4f4;
+}
+.ticket-list li.blue:hover {
+	border: 4px solid #b2e8f2;
+}
+.ticket-list li.green:hover {
+	border: 4px solid #c2dfa1;
+}
+.ticket-list li.darkblue:hover {
+	border: 4px solid #79d9f9;
+}
+.ticket-list li.orange:hover {
+	border: 4px solid #ffa483;
+}
+.ticket-list li.yellow:hover {
+	border: 4px solid #fcedb2;
+}
+.ticket-list li.purple:hover {
+	border: 4px solid #dad4f1;
+}
+.ticket_base {
+	position: relative;
+	width: 292px;
+	height: 126px;
+	color: #FFFFFF;
+}
+.ticket_blue {
+	background: url(../../img/pc/ticket_blue.png) center center no-repeat;
+}
+.ticket_darkblue {
+	background: url(../../img/pc/ticket_darkblue.png) center center no-repeat;
+}
+.ticket_green {
+	background: url(../../img/pc/ticket_green.png) center center no-repeat;
+}
+.ticket_orange {
+	background: url(../../img/pc/ticket_orange.png) center center no-repeat;
+}
+.ticket_purple {
+	background: url(../../img/pc/ticket_purple.png) center center no-repeat;
+}
+.ticket_yellow {
+	background: url(../../img/pc/ticket_yellow.png) center center no-repeat;
+}
+.ticket_base .diy{
+	position: absolute;
+  top: 22px;
+  left: 20px;
+  display: table;
+	width: 125px;
+	height: 80px;
+	font-size: 20px;
+	text-indent: 1em;
+	vertical-align: middle;
+} 
+
+.ticket_base .diy span{
+  vertical-align:middle; 
+  display:table-cell;
+} 
+
+.ticket_base .price {
+	position: absolute;
+	top: 13px;
+	left: 27px;
+	font-size: 29.02px;
+}
+.ticket_base .price span {
+	position: absolute;
+	top: -7px;
+	font-size: 75.74px;
+	font-family: arial;
+	vertical-align: text-top;
+	font-weight: bold;
+}
+
+.ticket_base .price .bigNum{
+	padding-top: 5px; 
+}
+
+.ticket_base .price .bigNum span {
+	top: 0px;
+	font-size: 56px; 
+}
+
+.ticket_base .price .NaN{
+	padding-top: 13px; 
+	font-size: 20px;
+}
+
+.ticket_base .price .NaN span {
+	display: inline-block;
+	width: 100px;
+	top: 15px;
+	left: 30px;
+	font-size: 22px;
+	word-break:break-all; /*支持IE，chrome，FF不支持*/
+　word-wrap:break-word;/*支持IE，chrome，FF*/ 
+}
+
+
+.ticket_base .price .text {
+	position: absolute;
+	left: 30px;
+	top: 68px;
+	width: 100px;
+	font-size: 18.62px;
+}
+
+.ticket_base .price .onSale{
+	position: relative;
+	width: 100px;
+	height: 70px; 
+}
+
+.ticket_base .price .onSale span:first-child{
+	font-size: 50px;
+	top: 0;
+}
+
+.ticket_base .price .onSale span:first-child+span{
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	font-size: 20px;
+}
+
+.hotticket .ticket-list {
+	padding: 20px 0;
+	width: 100%;
+	background: url(../../img/pc/hotLine.png) center bottom no-repeat;
+}
+.hotticket .ticket-list li {
+	margin: 10px 0;
+}
+.hotticket .ticket-list li:nth-child(3n-1) {
+	margin: 10px 11px;
+}
+.hotticket .ticket-list .timeAndNumber {
+	font-size: 12px;
+	padding: 0 5;
+}
+.hotticket .ticket-list .timeAndNumber div {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.hotticket .ticket-list .timeAndNumber div:first-child {
+	width: 69px;
+}
+.hotticket .ticket-list .timeAndNumber div:first-child+div {
+	width: 95px;
+	margin: 0 12px;
+}
+.hotticket .ticket-list .timeAndNumber div:first-child+div+div {
+	width: 72px;
+}
+.getTicket {
+	position: absolute;
+	right: 19px;
+	top: 14px;
+}
+.getTicket a:first-child,.getTicket a:first-child img { 
+	display: block;
+	width: 118px;
+	height: 64px; 
+	cursor:pointer;
+}  
+.ticket_base .getTicket a:last-child {
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	width: 90px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 7px auto 0 16px;
+}
+.ticket_blue .getTicket a:last-child {
+	background-color: #3ac2dd;
+}
+.ticket_blue .getTicket a:last-child:hover,
+.ticket_blue .getTicket a:last-child:active {
+	background-color: #2eb1ce;
+}
+.ticket_darkblue .getTicket a:last-child {
+	background-color: #03ade5;
+}
+.ticket_darkblue .getTicket a:last-child:hover,
+.ticket_darkblue .getTicket a:last-child:active {
+	background-color: #0096c7;
+}
+.ticket_green .getTicket a:last-child {
+	background-color: #70b71d;
+}
+.ticket_green .getTicket a:last-child:hover,
+.ticket_green .getTicket a:last-child:active {
+	background-color: #5fa616;
+}
+.ticket_orange .getTicket a:last-child {
+	background-color: #ff885d;
+}
+.ticket_orange .getTicket a:last-child:hover,
+.ticket_orange .getTicket a:last-child:active {
+	background-color: #ee5016;
+}
+.ticket_purple .getTicket a:last-child {
+	background-color: #6a51ca;
+}
+.ticket_purple .getTicket a:last-child:hover,
+.ticket_purple .getTicket a:last-child:active {
+	background-color: #5641a7;
+}
+.ticket_yellow .getTicket a:last-child {
+	background-color: #dab008;
+}
+.ticket_yellow .getTicket a:last-child:hover,
+.ticket_yellow .getTicket a:last-child:active {
+	background-color: #c7a002;
+}
+.timeAndNumber,
+.pass {
+	margin-top: 10px;
+	padding: 0 15px;
+	color: #666666;
+	overflow: hidden;
+}
+.timeAndNumber span {
+	color: #ff6831;
+}
+.timeAndNumber div.last-child {
+	width: 140px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	float:right;
+}
+.ticket_base .oldp {
+	position: relative;
+	font-size: 20px;
+	text-decoration: line-through;
+	top: -6px;
+}
+.ticket_base .left div.oldp b {
+	position: relative;
+	font-weight: lighter;
+	font-size: 24px;
+	top: 2px;
+}
+.ticket_base .nowp {
+	position: relative;
+	font-size: 29.02px;
+	top: -11px;
+}
+.ticket_base .left div.nowp b,
+.ticket_base div b {
+	position: relative;
+	font-weight: lighter;
+	font-size: 32px;
+	top: 2px;
+}
+.ticket_base .name,
+.ticket_base .weight {
+	position: relative;
+	width: 115px;
+	max-height: 40px;
+	overflow: hidden;
+	font-size: 14px;
+	top: -8px;
+	margin-bottom: 2px;
+}
+.ticket_base .name span ,.ticket_base .weight span{
+	position: relative;
+	top: 0;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: lighter;
+	transform: scale(1, 1.2);
+	-ms-transform: scale(1, 1.2);
+	/* IE 9 */
+	
+	-webkit-transform: scale(1, 1.2);
+	/* Safari and Chrome */
+}
+.ticket_base .reach {
+	margin-top: 10px;
+	font-size: 29.02px;
+}
+.ticket_base .discount {
+	margin-left: 20px;
+	font-size: 29.02px;
+}
+/*领券专区 结束*/
+
+/*详情页面*/
+
+
+.breadcrumb {
+	padding-top: 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #d8d9db;
+}
+.breadcrumb * {
+	font-family: "宋体";
+	color: #666666;
+	font-size: 12px;
+}
+.breadcrumb li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.breadcrumb li.active span {
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 7px;
+	background: #ff4a00;
+	border-radius: 9px;
+	color: #fff;
+}
+.breadcrumb > li + li:before {
+	content: ">";
+	padding: 0 5px;
+}
+.product .intro {
+	overflow: hidden;
+	margin-top: 14px;
+	border-bottom: 1px solid #d8d9db;
+}
+.product .intro>.left {
+	width: 340px;
+}
+.preview {
+	width: 100%;
+	height: auto;
+}
+/*小图片列表 开始*/
+
+.smallImg {
+	position: relative;
+	padding: 10px 25px;
+	width: 340px;
+	overflow: hidden;
+	float: left;
+}
+.scrollbutton {
+	position: absolute;
+	top: 25px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.scrollbutton.smallImgUp {
+	left: 0;
+	border-right: 10px solid #999999;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid transparent;
+	border-top: 10px solid transparent;
+}
+.scrollbutton.smallImgUp.disabled {
+	border-right: 10px solid #c9c9c9;
+}
+.scrollbutton.smallImgDown {
+	right: 0;
+	border-left: 10px solid #999999;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+}
+.scrollbutton.smallImgDown.disabled {
+	border-left: 10px solid #c9c9c9;
+}
+#imageMenu {
+	height: 50px;
+	width: 300px;
+	overflow: hidden;
+	float: left;
+	margin-left: -5px;
+}
+#imageMenu ul {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+#imageMenu li {
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	/*border: 1px solid #dddddd;*/
+	
+	margin: 0 5px;
+}
+#imageMenu li img {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+#imageMenu li#onlickImg,
+#imageMenu li:hover {
+	border: 1px solid #f57349;
+}
+/*小图片列表 结束*/
+/* bigImg */
+
+.bigImg {
+	position: relative;
+	float: left;
+	width: 340px;
+	height: 340px;
+	overflow: hidden;
+}
+.bigImg #midimg {
+	width: 340px;
+	height: 340px;
+	border: 1px solid #d8d9db;
+}
+.bigImg #winSelector {
+	width: 200px;
+	height: 200px;
+}
+#winSelector {
+	position: absolute;
+	cursor: crosshair;
+	filter: alpha(opacity=15);
+	-moz-opacity: 0.15;
+	opacity: 0.15;
+	background-color: #000;
+	border: 1px solid #fff;
+}
+/* bigView */
+
+#bigView {
+	position: absolute;
+	border: 1px solid #959595;
+	overflow: hidden;
+	z-index: 999;
+}
+#bigView img {
+	position: absolute;
+}
+.product .productInfo {
+	width: 650px;
+	padding: 0 25px;
+}
+.product .productInfo .bigtitle {
+	font-size: 24px;
+	color: #666666;
+	line-height: 40px;
+	margin-bottom: 25px;
+	margin-left: 20px;
+}
+.font-orange {
+	color: #ff6831;
+}
+.product .productInfo ul * {
+	font-family: "宋体";
+	font-size: 12px;
+}
+.product .productInfo ul li {
+	border-bottom: 1px solid #eeeeee;
+	overflow: hidden;
+	height: 43px;
+	line-height: 43px;
+	padding: 0 20px;
+}
+.product .productInfo li.price {
+	color: #666666;
+}
+.product .productInfo li.price div {
+	display: inline-block;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.product .productInfo li.price div.priceNow {
+	color: #df0029;
+}
+.product .productInfo li.price div.priceBefore {
+	color: #999999;
+	margin-left: 20px;
+	text-decoration: line-through;
+}
+.product .productInfo li.price span {
+	font-size: 26px;
+	font-weight: 600;
+}
+.product .productInfo li.price div.f-overCut+div.f-overCut {
+	margin-left: 20px;
+}
+.product .productInfo li.detail {
+	font-size: 24px;
+	color: #666666;
+}
+.product .productInfo li.detail>div:first-child {
+	margin-right: 25px;
+}
+.getTicketbtn {
+	display: block;
+	margin: 30px 20px;
+	width: 146px;
+	height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: none;
+	/*background: -webkit-linear-gradient(top,#fc8f68, #f46d43);
+	background: -o-linear-gradient(top,#fc8f68, #f46d43));
+	background: -moz-linear-gradient(top,#fc8f68, #f46d43));
+	background: linear-gradient(top,#fc8f68, #f46d43));*/
+	
+	background: url(../../img/pc/getNow.png) center center no-repeat;
+	font-family: "微软雅黑";
+}
+.getTicketbtn:hover {
+	/*background: -webkit-linear-gradient(top,#F58139, #F66F14);
+	background: -o-linear-gradient(top,#F58139, #F66F14);
+	background: -moz-linear-gradient(top,#F58139, #F66F14);
+	background: linear-gradient(top,#F58139, #F66F14);*/
+	
+	background: url(../../img/pc/getNow-hover.png) center center no-repeat;
+}
+.getTicketbtnDisable {
+	display: block;
+	margin: 30px 20px;
+	width: 146px;
+	height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: none;
+	background: #AAAAAA;
+	font-family: "微软雅黑";
+} 
+.howtouse {
+	padding: 20px 0 60px;
+}
+.howtouse .title {
+	font-family: "宋体";
+	font-size: 20px;
+	color: #333333;
+	line-height: 40px;
+	border-bottom: 2px solid #bbbbbb;
+}
+.howtouse .detail {
+	border: 1px solid #dddddd;
+	padding: 0 25px;
+	margin-top: 10px;
+}
+.howtouse .detail .item {
+	padding: 18px 0;
+	//border-bottom: 2px dotted #aaaaaa;
+	background: url(../../img/pc/detailLine.png) center bottom no-repeat;
+}
+.howtouse .detail .item:first-child+.item+.item {
+	//border-bottom: none;
+	background: none;
+}
+.howtouse .detail header {
+	font-size: 20px;
+	color: #ff6831;
+	line-height: 40px;
+}
+.howtouse .detail .item p {
+	font-family: "宋体";
+	color: #666666;
+	font-size: 12px;
+	line-height: 20px;
+}
+.howtouse .detail .item a {
+	display: inline-block;
+	font-family: "宋体";
+	color: #FFFFFF;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 20px;
+	background: #ff6831;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.howtouse .detail .item a:hover {
+	background: #EA4B1A;
+}
+.howtouse .detail .item img {
+	width: 100%;
+	height: auto;
+}
+.popbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: transparent;
+}
+.popbox .popboxin {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -107.5px;
+	margin-left: -212.5px;
+	width: 425px;
+	height: 215px;
+	background: #FFFFFF;
+	border: 5px solid #dddddd;
+	border-radius: 5px;
+}
+.popbox .popboxin header {
+	position: relative;
+	font-family: "宋体";
+	height: 35px;
+	line-height: 35px;
+	color: #666666;
+	font-size: 12px;
+	background: #f3f3f3;
+	padding: 0 15px;
+}
+.popbox .popboxin header .close {
+	display: block;
+	position: absolute;
+	top: 2.5px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	background: url(../../img/pc/close.png) center center no-repeat;
+}
+.popbox .popboxin header .close:hover {
+	background: url(../../img/pc/close-hover.png) center center no-repeat;
+}
+.popbox .popboxin .content {
+	position: relative;
+	height: 160px;
+}
+.popbox .popboxin .content.green {
+	color: #80bc45;
+}
+.popbox .popboxin .content.green img {
+	position: absolute;
+	right: 55%;
+	top: 40px;
+}
+.popbox .popboxin .content.green .text {
+	position: absolute;
+	left: 47%;
+	top: 45px;
+	line-height: 25px;
+}
+.popbox .popboxin .content.green a {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	font-family: "宋体";
+	color: #666666;
+	font-size: 12px;
+}
+.popbox .popboxin .content.green a:hover {
+	color: #ff6831;
+}
+.popbox .popboxin .content.orange {
+	color: #666666;
+}
+.popbox .popboxin .content.orange img {
+	position: absolute;
+	right: 70%;
+	top: 40px;
+}
+.popbox .popboxin .content.orange .text {
+	position: absolute;
+	left: 32%;
+	top: 35px;
+	line-height: 25px;
+}
+.popbox .popboxin .content.orange a {
+	color: #ff6831;
+}
+.popbox .popboxin .content.orange a:hover {
+	color: #ff4a00;
+}
+.popbox .popboxin .content.visitor {
+	padding: 40px 20px;
+}
+.popbox .popboxin .content.visitor>img {
+	float: left;
+	margin-right: 15px;
+}
+.popbox .popboxin .content.visitor .text {
+	color: #80bc45;
+	float: left;
+}
+
+.popbox .popboxin .content.visitor .text p{
+	max-width: 180px;
+	word-break: break-all;
+}
+
+.popbox .popboxin .content.visitor .QCcode {
+	float: left;
+	margin: -15px 0 0 15px;
+}
+.popbox .popboxin .content.visitor .QCcode p {
+	text-align: center;
+	color: #666666;
+}
+.H500 {
+	position: relative;
+	height: 500px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.errorlink {
+	position: absolute;
+	top: 220px;
+	right: 255px;
+}
+.errorlink .toIndex {
+	background: #FF9327;
+	color: rgba(255, 255, 255, .9);
+	padding: 10px 15px;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+.errorlink .toIndex:hover,
+.errorlink .toIndex:active {
+	background: #FF6831;
+}
+.errorlink .topPrev {
+	color: #3688D1;
+	text-decoration: underline;
+}
+.errorlink .topPrev:hover,
+.errorlink .topPrev:active {
+	color: #036FCB;
+}
+
+.branch_store ul{
+	display: none;
+	margin-top: 20px;
+	padding: 0 10px;
+	border:1px solid #DDDDDD;
+	color: #666666;
+}
+
+.branch_store ul li+li{
+	border-top:1px dotted #DDDDDD;
+}
+
+.branch_store ul li{
+	padding: 10px;
+	line-height: 30px;
+}
+
+.branch_store ul li div.header{
+	font-weight: 700;
+}
+
+.branch_store ul li div.header .time{
+	display: inline-block;
+	margin-left: 10px;
+}

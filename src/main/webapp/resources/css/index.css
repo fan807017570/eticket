@@ -1,0 +1,602 @@
+body {
+	position: relative;
+	max-width: 640px;
+	min-width: 320px;
+	width: 100%;
+	margin: 0 auto; 
+	background: #eeeeee;
+	color: #333333;
+	font-size: 16px; 
+	-moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+@media screen and (min-width:641px){
+	body{
+		box-shadow: 0 0 10px rgba(0,0,0,.3);
+	}
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.non-data{
+	margin-top: 30%;
+	text-align: center;
+	color: #999999;
+}
+
+.bgF6{
+	border-bottom: 1px solid #dddddd;
+	background: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.bgF6border{
+	background-color: #FFFFFF;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	margin: 10px 0;
+}
+
+.loadmore{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+	//margin-bottom: 10px;
+}
+
+.indexPage .classify{
+	font-size: 0;
+}
+
+.indexPage .classify li{
+	position: relative;
+	width: 33.33333333333%;
+	display: inline-block;
+	text-align: center;
+	//padding: 1%;
+	padding: 10px 1%;
+	font-size: 16px; 
+	//background: red;
+}
+
+.indexPage .classify li+li{
+	//margin-left: -5px;
+}
+
+.indexPage .classify li.active{
+	background: #EEEEEE;
+}
+
+.indexPage .classify li img{
+	width: 40%;
+	height: auto;
+}
+
+.indexPage .classify li span{
+	display: block; 
+	line-height: 30px;	
+}
+
+.indexPage .classify li.active{
+	background: #EEEEEE;
+}
+
+.indexPage .classify>li ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #EEEEEE;
+	width: 100%;
+	z-index: 9999;
+	border:1px solid #dddddd;
+	//box-shadow: 1px 1px 5px #FFFFFF;
+}
+
+.indexPage .classify>li ul li{
+	display: block;
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+
+.indexPage .classify>li ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #666666;
+} 
+
+.indexPage .classify>li ul li a:hover ,.indexPage .classify>li ul li a.active{
+	background: #F8F8F8;
+} 
+
+.shuaixuan{
+	position: relative;
+	//padding-top: 10px;
+}
+
+.classifyListbox{
+	display: none;
+	position: absolute; 
+	width: 100%;
+	height: auto;  
+	background: rgba(0,0,0,.3); 
+	z-index: 99999;
+	outline: none; 
+}
+
+.classifyListboxInner{ 
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	border-top: 1px solid #dddddd;
+	background: #FFFFFF; 
+	z-index: 9999;
+	outline: none;
+	overflow: hidden;
+}
+
+.classifyListboxInner>div{
+	-moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+	position: relative;
+	width: 33.33333%;
+	float: left; 
+}
+
+.classifyListboxInner>div a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #666666;
+	cursor:pointer;
+}
+
+.classifyListboxInner>div.classifyList{
+	background: #EEEEEE;
+}
+
+.classifyListboxInner>div.classifyList li.active{
+	background: #F8F8F8;
+}
+
+.classifyListboxInner>div.classifyList2{
+	background: #F8F8F8;
+}
+
+.classifyListboxInner>div.classifyList2 li.active{
+	background: #FFFFFF;
+}
+
+.classifyListboxInner>div.classifyList3{
+	background: #FFFFFF;
+	padding-left: 10px;
+}
+.classifyListboxInner>div.classifyList3 li+li{
+	border-top: 1px solid #DDDDDD;
+}
+
+.classifyListboxInner>div.classifyList3 li a{
+	text-align: left;
+}
+
+.classifyListboxInner>div.classifyList3 li a:hover,.classifyListboxInner>div.classifyList3 li a.active{
+	color: #FF6831;
+}
+
+
+.indexticket{
+	padding: 10px;
+}
+
+.indexticket .indexticketbg{
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+    -moz-box-align:center; 
+    -webkit-box-align:center; 
+    -o-box-align:center; 
+    box-align:center;  
+	position: relative;
+	background: url(../img/text_quan.png) 110% center no-repeat;
+	background-size: 40%;
+	border:18px solid transparent;
+	-moz-border-image:url(../img/indexListbg.png) 30 30 round;	/* Old Firefox */
+	-webkit-border-image:url(../img/indexListbg.png) 30 30 round;	/* Safari and Chrome */
+	-o-border-image:url(../img/indexListbg.png) 30 30 round;		/* Opera */
+	border-image:url(../img/indexListbg.png) 30 30 round;
+}
+
+.indexticket .indexticketbg.usedTicket{
+	background: none;
+}
+
+.indexticket .indexticketbg .img{
+	-moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    margin-right: 10px;
+	text-align: center;
+}
+
+.indexticket .indexticketbg .infos{
+	-moz-box-flex: 2; 
+    -webkit-box-flex: 2; 
+    box-flex: 2;  
+} 
+
+.indexticket .indexticketbg .img>img{
+	width: 100px;
+}
+
+@media only screen and (min-width: 400px) {
+	.indexticket .indexticketbg .img>img{
+		width: 120px;
+	}
+}
+
+.indexticket .indexticketbg .infos p{
+	color: #666666;
+	line-height: 20px;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.indexticket .time{
+	position: absolute;
+	top: -17px;
+	left:-18px;
+	background: rgba(0,0,0,.5);
+	color: rgba(255,255,255,.8);
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	font-size: 12px; 
+	border-bottom-right-radius: .7em;
+	border-top-right-radius: .7em;
+}
+
+.indexticket .time img{
+	width: 18px;
+	margin-top: -4px; 
+}
+
+
+.indexticket .indexticketbg .infos .title{
+	color:#333333;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.indexticket .indexticketbg .infos .price{
+	color:#666666;
+	font-size: 14px;  
+	overflow: hidden;
+}
+
+.indexticket .indexticketbg .infos .price p{
+	max-width:112px;
+	float: left;
+	margin-right: 5px; 
+}
+
+
+.indexticket .indexticketbg .infos .price i{ 
+	font-style: normal;
+	text-decoration: line-through; 
+	font-size: 14px;
+}
+
+.indexticket .indexticketbg .infos .price i span{
+	color:#df0029;
+	font-size: 16px;
+	
+} 
+
+
+.indexticket .indexticketbg .infos .price .stars{
+	position: relative;
+	width: 55px; 
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	background: url(../img/stars_gray.png) center center no-repeat; 
+	background-size: contain;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.indexticket .indexticketbg .infos .price .stars img{
+	position: relative;
+	left: -100%;
+	top: 0;
+	
+	 
+}
+
+@media only screen and (min-width: 416px) {
+	.indexticket .indexticketbg .infos .price .stars{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 415px) and (min-width:370px){
+	.indexticket .indexticketbg .infos .price .stars{
+		width: 80px;
+	}
+}
+
+.indexticket .indexticketbg .infos .leave{
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+    -moz-box-align:center; 
+    -webkit-box-align:center; 
+    -o-box-align:center;
+    margin: 5px 0;
+}
+
+.indexticket .indexticketbg .infos .leave .tag{  
+	height: 28px;
+	line-height: 28px;
+	background: #FF8B3D;
+	color: #FFFFFF;  
+	font-size: 14px;
+	padding: 0 3px;
+	border-radius: 5px;
+	transform: scale(1,1.1);
+	-ms-transform: scale(1,1.1); /* IE 9 */
+	-webkit-transform: scale(1,1.1); /* Safari and Chrome */
+} 
+
+.indexticket .indexticketbg .infos .leave p{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+}
+
+.indexticket .indexticketbg .infos .leave p span{
+	color:#df0029;
+}
+
+/*.indexPage .getNow{
+	border:1px solid #FF6831;
+	padding: 5px 40px;
+	background: transparent;
+	font-size: 16px;
+	color: #FF6831;
+	border-radius: 5px;
+}*/
+
+.indexPage .getNow{ 
+	padding: 5px 50px;
+	border:1px solid #FF6831;
+	background: transparent;
+	font-size: 16px;
+	color: #FF6831;
+	border-radius: 5px;
+}
+.indexPage .getNow:hover,.indexPage .getNow:active{ 
+	background: #FF6831;
+	color: #FFFFFF;
+}
+
+@media only screen and (min-width: 490px) {
+	.indexticket{
+		padding: 10px 25px;
+	} 
+	
+	.indexticket .indexticketbg .img{
+		text-align: center;
+		margin-right: 10px;
+	}
+	
+	.indexticket .indexticketbg .img>img{
+		width: 150px;
+	}	
+	
+	.indexticket .indexticketbg .infos .title{
+		color:#333333;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	
+	.indexticket .indexticketbg .infos .price{ 
+		font-size: 16px;  
+	}   
+	
+	.indexticket .indexticketbg .infos .price i span span{
+		font-size: 20px; 
+	} 
+	
+	.indexticket .indexticketbg .infos .leave{ 
+	    margin: 8px 0;
+	} 
+	.indexticket .indexticketbg .infos .leave .tag span{
+		font-size: 16px;
+	}
+	
+	.indexticket .indexticketbg .infos .leave p{ 
+		font-size: 14px; 
+	} 
+	
+	.indexPage .getNow{ 
+		padding: 8px 40px; 
+		font-size: 18px; 
+		border-radius: 8px;
+	}
+
+}
+
+
+.publicTop{
+	position: relative
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 20px;
+	background: #FF6831;
+}
+
+.publicTop a.back{ 
+	position: absolute;
+	left: 15px;
+	top: 20px;
+	color: #FFFFFF;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	background: url(../img/public_left.png) left center no-repeat;
+	background-size: contain;
+	text-indent:22px;
+	font-size: 18px;
+} 
+
+.ticketList .classify li a{
+	display: block;
+	padding: 10px 0; 
+}
+
+.ticketList .classify li a:active{
+	color: #FF6831;
+}
+
+.ticketList .classify li.active{ 
+	background:#EEEEEE;
+} 
+
+.rotate_text{
+	position: absolute;
+	right: 5%;
+	top: 40%;
+	font-size: 24px;
+	color: #DDDDDD;
+	transform: rotate(-45deg);
+	transform-origin:20% 40%;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-ms-transform-origin:20% 40%; /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Safari and Chrome */
+	-webkit-transform-origin:20% 40%; /* Safari and Chrome */
+	pointer-events: none; 
+}
+
+.page404{
+	display: block;
+	width: 50%;
+	max-width: 150px;
+	height: auto;
+	margin: 35% auto 0;	
+} 
+
+a.btnReturn{
+	display: block;
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	background: #FF6831; 
+	color: #FFFFFF;
+	margin: 10px auto;
+}
+
+.btnP a{
+	display: inline-block;
+	color:#FFFFFF;
+	height: 28px;
+	line-height: 28px;
+	background: #FF6831;
+	font-size: 16px;
+	width: 80px;
+	text-align: center; 
+	margin: 5px 5px 5px 0 ;
+}
+
+.btnP a:hover{
+	background: #FF8B3D;
+}
+
+.myList{ 
+	padding: 15px 0;
+	line-height: 40px; 
+}
+
+.myList ul {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px;
+	-moz-border-radius:5px; /* 老的 Firefox */
+	overflow: hidden;
+}
+
+.myList ul li{
+	border-top:1px solid #ff6831;
+	border-bottom:1px solid #ff6831;
+	border-left:1px solid #ff6831;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+.myList ul li:first-child{ 
+	border-bottom-left-radius: 5px;
+	-moz-border-left-right-radius:5px; /* 老的 Firefox */
+	border-top-left-radius: 5px;
+	-moz-border-top-left-radius:5px; /* 老的 Firefox */
+}
+
+.myList ul li:last-child{
+	border-right: 1px solid #ff6831;
+	border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius:5px; /* 老的 Firefox */
+	border-top-right-radius: 5px;
+	-moz-border-top-right-radius:5px; /* 老的 Firefox */
+}
+
+.myList ul li a{
+	color: #ff6831;
+	display: block;
+	height: 100%;
+}
+
+.myList ul li.active{
+	background: #ff6831;
+}
+
+.myList ul li.active a{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+

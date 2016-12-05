@@ -1,0 +1,896 @@
+.userCenter{
+	overflow: hidden;
+	padding: 20px 0 50px;
+}
+
+.userCenter>.left{
+	width: 200px;
+	height: 567px;
+	
+}
+
+.userCenter>.right{
+	width:790px;
+}
+
+.userCenter .navleft{
+	border:1px solid #dddddd;
+	background: #f8fbff;
+	padding: 13px;
+}
+
+.userCenter .navleft header{
+	font-size: 18px;
+	color:#222222;
+	line-height: 50px;
+	padding-left: 25px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.userCenter .navleft ul{
+	border-bottom: 1px solid #dddddd;
+}
+
+.userCenter .navleft ul li.active {
+	border-left:2px solid #ff6831;
+}
+
+.userCenter .navleft ul li:hover span,.userCenter .navleft ul li.active span{
+	color: #ff6831;
+}
+
+.userCenter .navleft ul li{
+	height: 20px;
+	line-height: 20px;
+	padding-left: 25px;
+	margin: 20px 0;
+	border-left:2px solid transparent;
+}
+
+.userCenter .navleft ul li a{
+	color:#666666;
+}
+
+.userCenter>.right .tab{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #dddddd;
+	overflow: hidden;
+}
+
+.userCenter>.right .tab a{
+	display: block;
+	color:#999999;
+	font-size: 12px;
+	float: left;
+	padding: 0 15px;
+	border-right: 1px solid #DDDDDD;
+	
+}
+
+.userCenter>.right .tab a.active,.userCenter>.right .tab a:hover{
+	color:#FF6831;
+	background: -webkit-linear-gradient(top,#eeeeee, #ffffff); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(top,#eeeeee, #ffffff); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(top,#eeeeee, #ffffff); /* Firefox 3.6 - 15 */
+	background: linear-gradient(top,#eeeeee, #ffffff); /* 标准的语法 */
+	
+}
+
+.userCenter>.right .tab a.active span,.userCenter>.right .tab a:hover span{
+	color: #FF6831;
+}
+
+.userCenter>.right .list{
+	padding: 20px 0;
+	color:#666666;
+}
+
+.userCenter>.right .list.used{
+	padding: 20px 0 100px;
+}
+
+.userCenter>.right .list ul li{
+	background: url(../../img/pc/dotted-line.png) center bottom no-repeat;
+	padding: 15px;
+}
+
+.userCenter>.right .list ul li:after{
+	content: "." ; 
+	display: block ;
+	height: 0 ;
+	clear: both ;
+	visibility: hidden ; 
+} 
+
+.userCenter>.right .list ul li>div{ 
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+} 
+
+.userCenter>.right .list ul li>div.singleline{ 
+	margin-top: 25px;
+}
+
+.userCenter>.right .list ul li>div.doubleline{ 
+	margin-top: 18px;
+}
+
+.userCenter>.right .list ul li>div.doubleline a{ 
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 10px;
+	color:#0066cc;
+}
+
+.userCenter>.right .list ul li>div.doubleline a:hover{  
+	color:#FF6831;
+}
+
+.userCenter>.right .list ul li>div:first-child{
+	text-align: left;
+	padding-left: 30px;
+	width: 310px;
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:nth-child(2){
+	width: 120px;
+	display: block; 
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap; 
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:nth-child(3){
+	width: 190px;  
+}
+
+.userCenter>.right .list.redEnvelopes ul li>div:nth-child(4){
+	width: 100px; 
+} 
+
+.userCenter>.right .list ul li>div.info .img{
+	width: 70px;
+	height: 70px;
+	float: left;
+	border: 1px solid #f4f4f4;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.userCenter>.right .list ul li>div.info .img img{
+	width: 100%;
+	height: auto;
+}
+
+.userCenter>.right .list ul li>div.info .description{
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.userCenter>.right .list ul li>div.info .description a{
+	display: block;
+	color: #222222;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.userCenter>.right .list ul li>div.info .description span{
+	color: #999999;
+}
+
+
+.userCenter>.right .list.notuse ul li>div:nth-child(2){
+	width: 160px; 
+}
+
+.userCenter>.right .list.notuse ul li>div:nth-child(3){
+	width: 100px;  
+}
+
+.userCenter>.right .list.notuse ul li>div:nth-child(4){
+	width: 150px; 
+} 
+
+.userCenter>.right .list.used ul li>div:nth-child(2){
+	width: 100px; 
+}
+
+.userCenter>.right .list.used  ul li>div:nth-child(3){
+	width: 80px;  
+}
+
+.userCenter>.right .list.used  ul li>div:nth-child(4){
+	width: 230px; 
+}
+
+
+.threeline{
+	position: relative;
+}
+
+.threeline p.title{
+	color:#666;
+	font-size: 14px;
+}
+
+.threeline p{
+	color:#999;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.threeline p span{
+	color:#666;
+}
+
+.threeline .starsbox{
+	display: inline-block;
+	vertical-align:super;
+}
+
+.threeline .starsbox .stars{
+	display: inline-block;
+	vertical-align:text-bottom
+}
+
+.ticketInfo{
+	border:1px solid #DDDDDD;
+	min-height: 567px;
+	padding: 0 15px;
+	color:#666666;
+	font-size: 12px;
+}
+
+.orange{
+	color:#FF6831;
+}
+
+.ticketInfo header{
+	font-size: 16px;
+	color:#616161;
+	line-height: 40px;
+	margin: 20px 0 5px;
+	padding-left: 20px;
+}
+
+.ticketInfo .box{
+	border:1px solid #DDDDDD;
+	padding: 15px 20px;
+	overflow: hidden;
+}
+
+.ticketInfo .box>p{
+	line-height: 28px;
+}
+
+.ticketInfo .box .img{
+	width: 70px;
+	height: 70px;
+	border:1px solid #DDDDDD;
+	overflow: hidden;
+	float: left;
+}
+
+.ticketInfo .box .img img{
+	width: 100%;
+	height: auto;
+}
+
+.ticketInfo .box .text{
+	float: left;
+	margin-left: 15px;
+	color: #999999;
+}
+
+.ticketInfo .box .text .title{
+	margin: 5px 0 10px;
+	color:#666666
+}
+
+.userCenter .notice{
+	border:1px solid #DDDDDD;
+	min-height: 567px; 
+}
+
+.userCenter>.right.notice .list.redEnvelopes  ul li>div:nth-child(4){
+	width: 95px; 
+}
+
+.userCenter>.right.notice .list.redEnvelopes{
+	padding-top: 10px;
+}
+
+.list a.see{
+	color:#666666;
+}
+
+.list a.see:hover{
+	color:#FF6831
+}
+
+.H500{
+	position: relative; 
+	text-align: center; 
+}
+
+.H500>img:only-child{
+	margin-top: 100px;
+}
+
+.errorlink{
+	position: absolute;
+	top: 220px;
+	right:255px;
+} 
+
+.errorlink .toIndex{
+	background: #FF9327;
+	color: rgba(255,255,255,.9);
+	padding: 10px 15px;
+	border-radius: 3px;
+	margin-right: 20px;
+}
+
+.errorlink .toIndex:hover,.errorlink .toIndex:active{
+	background: #FF6831;
+}
+
+.errorlink .topPrev{
+	color: #3688D1;
+	text-decoration: underline;
+}
+
+.errorlink .topPrev:hover,.errorlink .topPrev:active{
+	color: #036FCB;
+}
+
+/*券生成步骤样式 开始*/
+.payment .steps {
+	width: 100%;
+	height: 150px;
+	background: transparent;
+	padding-top: 60px;
+	border-bottom: 2px solid #eeeeee;
+}
+.payment .steps ul {
+	display: block;
+	width: 532px;
+	height: 4px;
+	margin: 0 auto;
+	background: #e6e6e6;
+	border-radius: 10px;
+}
+.payment .steps ul li {
+	position: relative;
+	width: 33.3333%;
+	height: 4px;
+	float: left;
+	text-align: center;
+}
+.payment .steps ul li:first-child {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.payment .steps ul li:last-child {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.payment .steps ul li a.circle {
+	position: absolute;
+	top: -7px;
+	left: 50%;
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #e6e6e6;
+	margin-left: -9px;
+	text-align: center;
+	line-height: 18px;
+	color: #b5b5b5;
+	font-size: 12px;
+}
+.payment .steps ul li a.text {
+	line-height: 70px;
+	color: #666666;
+	font-size: 12px;
+}
+.payment .steps ul li.active {
+	background: #ff6831;
+}
+.payment .steps ul li.active a.circle {
+	background: #ff6831;
+	color: #FFFFFF;
+}
+
+.payment .steps ul li.active a.circle:before{
+	content: " ";
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	display: block;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: rgba(255,104,49,.2);
+	margin-left: -13px;
+	text-align: center;
+	line-height: 30px;
+	color: #b5b5b5;
+}
+
+/*.payment .steps ul li.active a.text {
+	color: #ff6831;
+}*/
+/*券生成步骤样式 结束*/
+
+.payment .stepOne{
+	padding: 20px 0;
+}
+
+.payment .stepOne .info{
+	display: inline-block;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 10px 0;
+}
+
+.payment .stepOne p{
+	line-height: 35px;
+	color: #666666;
+}
+
+.payment .stepOne p span{
+	color: #333333;
+}
+
+.payment .stepOne p span:not(:first-child){
+	margin-left: 40px;
+}
+
+.payment p span.price{
+	color: #f32f39;
+	font-size: 22px;
+}
+
+.payment .stepOne .method{
+	padding: 20px 0;
+}
+
+.payment .stepOne .method input[type="radio"],.payment .stepOne .method img{
+	vertical-align: middle;
+}
+
+.payment .stepOne .method img{
+	margin-left: 10px;
+	width: 135px;
+	height: 42px;
+}
+
+.topaybtn {
+	display: inline-block;
+	height: 40px;
+	padding: 0 58px;
+	color: #FFFFFF;
+	font-size: 16px;
+	border: none; 
+	background: url(../../img/pc/getNow.png) center center no-repeat;
+	font-family: "微软雅黑";
+	vertical-align: top;
+}
+
+.topaybtn:hover {
+	background: url(../../img/pc/getNow-hover.png) center center no-repeat;
+}
+
+.topay{
+	height: 40px;
+	background: #eeeeee;
+	text-align: right;
+	margin: 80px auto;
+}
+
+.topay p{
+	display: inline-block;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.stepTwo{
+	width: 500px;
+	margin: 80px auto; 
+}
+
+.stepTwo .head{
+	font-size: 18px;
+	color: #666666;	
+}
+
+.stepTwo .head span{
+	font-size: 12px;
+	color: #f32f39;	
+	margin-left: 20px;
+}
+
+.stepTwo .content{
+	display: block;
+	width: 100%; 
+	border: 1px solid #eeeeee;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.stepTwo .content .img{
+	padding: 30px;
+	border-right: 1px solid #eeeeee;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.stepTwo .content .img img{
+	width: 200px;
+	height: 200px;
+}
+
+.stepTwo .content .info{ 
+	display: inline-block;
+	padding: 5px 10px;
+	vertical-align: top;
+}
+
+.stepTwo .content .info .tips{
+	height: 30px;
+	background: url(../../img/pc/clock.png) left center no-repeat;
+	font-size: 12px;
+	color: #999999;
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+
+.stepTwo .content .info .scan{
+	width: 160px;
+	height: 40px;
+	margin: 80px 0 0 20px;
+	background: url(../../img/pc/scan.png) left center no-repeat;
+	font-size: 14px;
+	color: #666666;
+	line-height: 20px;
+	padding-left: 40px;
+}
+
+/*支付成功 开始*/ 
+
+.paymentSuccess{ 
+	padding:80px;
+	text-align: center;
+}	
+
+.paymentSuccess img{
+	width: 60px;
+	height: auto;
+}
+
+.paymentSuccess p{
+	color: #333333;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 10px 0;
+}
+
+.paymentSuccess a.btn{
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 12px;
+	background: #f5f5f5;
+	color: #bbbbbb;
+	border-radius: 10px;
+	margin-left: 50px;
+}
+
+.paymentSuccess a.return{
+	color: #666666;
+	margin-left: 30px;
+}
+
+.paymentSuccess a.return:hover{
+	text-decoration: underline;
+}
+
+/*支付成功 结束*/
+
+/*退款详情页 开始*/
+.userCenter .right .title_bold{
+	font-size: 16px; 
+	line-height: 30px;
+	border-bottom: 1px solid #DDDDDD;
+	margin: 20px;
+}
+
+.userCenter .right .details{
+	 background: #f7f8f8;
+	 margin: 20px; 
+	 color: #666666;
+}
+
+.userCenter .right .details.payment .steps{
+	border-bottom: none;
+	position: relative;
+}
+
+.help{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px; 
+	color:#666666; 
+	float: right;
+	font-size: 14px;
+	cursor: pointer;
+} 
+
+.help:hover{
+	color: #F32F39;
+}
+
+.help span.icon{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #FF6831 ;
+	border-radius: 100%;
+	color: #FF6831;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	margin-right: 3px;
+}
+
+.opps{
+	background: url(../../img/pc/oops.png) left center no-repeat;
+	padding-left: 20px;
+}
+
+.radios{
+	overflow: hidden;
+}
+
+.userCenter .right .details .top{ 
+	 border-bottom: 1px solid #DDDDDD;
+	 line-height: 30px;
+	 padding: 10px;
+}
+
+.userCenter .right .details .top p:first-child { 
+	 color: #df0029;
+	 font-size: 16px;
+}
+
+.userCenter .right .details .top p span.num{ 
+	 color: #df0029;
+}
+
+.userCenter .right .details .top p>span{
+	margin-right: 20px;
+}
+
+.userCenter .right .details>p{
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+	padding-bottom: 50px;
+}
+
+.refund .topay{
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	left: 0;
+}
+
+/*退款详情页 结束*/
+
+/*申请退款 开始*/
+.refund{
+	position: relative;
+	border: 1px solid #DDDDDD;
+	height: 567px;
+}
+
+.refund .title{
+	height: 40px;
+	line-height: 40px;
+	background: #F5F5F5;
+	color: #df0029;
+	padding-left: 20px;
+}
+
+.refund .content{  
+	color: #666666;
+	padding: 30px 0 0 30px;
+}
+
+.refund .content .items{
+	line-height: 40px;
+	overflow: hidden;
+}
+
+.refund .content .items:nth-last-of-type(2){
+	color: #999999;
+}
+
+.refund .content .items label{
+	width: 90px;
+	float: left;
+	text-align: right;
+}
+
+.refund .content .items .topaybtn{
+	margin-top: 30px;
+}
+
+.refund .content .items label span{
+	color: #df0029;
+	font-weight: bold;
+	margin-right: 3px;
+}
+
+.refund .content .items .inputs{
+	float: left;
+	width: 420px;
+}
+
+.refund .content .items .inputs input[type=radio]{
+	 vertical-align: middle;
+}
+
+.refund .content .items .inputs p{
+	 color: #999999;
+}
+
+.refund .content .items .inputs .item{
+	 width: 200px;
+	float: left;
+}
+
+
+/*申请退款 结束*/
+
+.refund-help-header{
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10px;
+	padding: 0 5px;
+	border-bottom: 1px dotted #DDDDDD;
+}
+
+.refund-help-header a{
+	color: #666666;
+	cursor: pointer;
+}
+
+.refund-help-header a:hover{
+	color: #FF6831;
+	text-decoration: underline;
+}
+
+.refund-help-text{
+	padding: 15px 45px 40px;
+}
+
+.refund-help-text p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+.f-toEvaluate{
+	cursor: pointer;
+}
+
+.f-toEvaluate_box{
+	display: none;
+	position: absolute;
+	left: -170px;
+	top: 86px;
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	text-align: left; 
+	z-index: 100;
+}
+
+.f-toEvaluate_box:before{
+	content: " ";
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid #DDDDDD;
+	position: absolute;
+	top: -30px;
+	right: 100px;
+}
+
+.f-toEvaluate_box:after{
+	content: " ";
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-top: 11px solid transparent;
+	border-bottom: 15px solid #FFFFFF;
+	position: absolute;
+	top: -25px;
+	right: 101px;
+}
+
+.f-toEvaluate_box span.red{
+	color:#df0029;
+}
+
+.stars{
+	position: relative;
+	width: 124px; 
+	height: 21px; 
+	background: url(../../img/pc/stars_gray.png) center center no-repeat; 
+	background-size: contain;
+	overflow: hidden;
+	z-index: 99;
+	vertical-align: middle;
+}
+
+.stars img{
+	position: relative;
+	left: -100%;
+	top: 0;	 
+}
+
+.starsWill{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.f-tips p{
+	display: inline-block;
+	color: #FF4A00;
+	background: #ffebeb;
+	border:1px solid #ffbdbf;
+	padding:0 2px; 
+	margin: 3px 0;
+	height: 18px;
+	line-height: 16px;
+} 
+
+.f-toEvaluate_box .f-submit{
+	display: block;
+	padding: 4px 30px;
+	font-family: "微软雅黑";
+	float: right;
+	margin-right:20px ;
+	color:#666666;
+	background: -webkit-linear-gradient(top,#eeeeee, #ffffff); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(top,#eeeeee, #ffffff); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(top,#eeeeee, #ffffff); /* Firefox 3.6 - 15 */
+	background: linear-gradient(top,#eeeeee, #ffffff); /* 标准的语法 */
+	border: 1px solid #dddddd;
+}
+
+.f-toEvaluate_box .f-submit:hover{ 
+	background: -webkit-linear-gradient(top,#ffffff, #eeeeee); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(top,#ffffff, #eeeeee); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(top,#ffffff, #eeeeee); /* Firefox 3.6 - 15 */
+	background: linear-gradient(top,#ffffff, #eeeeee); /* 标准的语法 */
+}
+
+
+
+
+

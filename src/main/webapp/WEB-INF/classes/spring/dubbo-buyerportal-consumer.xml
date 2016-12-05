@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+	<!-- 实例化，使用的服务 -->
+	<dubbo:reference id="couponService"
+		interface="com.zteingenico.eticket.business.facade.service.buyerportal.IBuyerPortalCouponFacadeService"
+		owner="he.shuangtian" version="1.0.0" />
+	<dubbo:reference id="shareService"
+		interface="com.zteingenico.eticket.business.facade.service.buyerportal.IBuyerPortalShareFacadeService"
+		owner="he.shuangtian" version="1.0.0" />
+	<dubbo:reference id="topicService"
+		interface="com.zteingenico.eticket.business.facade.service.buyerportal.IBuyerPortalTopicFacadeService"
+		owner="he.shuangtian" version="1.0.0" />
+	<dubbo:reference id="weixinService"
+		interface="com.zteingenico.eticket.business.facade.service.weixin.IWexinFacadeService"
+		owner="wan.yu" version="1.0.0" />
+	<dubbo:reference id="memberService"
+		interface="com.zteingenico.eticket.business.facade.service.fans.IMemberFacadeService"
+		version="1.0.0" />
+	<dubbo:reference id="checkRecFacadeService"
+		interface="com.zteingenico.eticket.business.facade.service.checkrecord.ICheckRecFacadeService"
+		owner="zouxian" version="1.0.0" />
+	<dubbo:reference id="propertiesService"
+		interface="com.zteingenico.eticket.business.facade.service.common.IPropertiesFacadeService"
+		owner="wan.yu" version="1.0.0" />
+	<dubbo:reference id="orderService"
+		interface="com.zteingenico.eticket.business.facade.service.buyerportal.IBuyerPortalOrderFacadeService"
+		owner="he.shuangtian" version="1.0.0" />
+
+	<dubbo:reference id="cpnwebFacadeService"
+		interface="com.zteingenico.eticket.business.facade.service.cpnweb.ICpnwebFacadeService"
+		owner="liangjunhui" version="1.0.0" />
+
+	<dubbo:reference id="cpnAdvFacadeService"
+		interface="com.zteingenico.eticket.business.facade.service.adv.ICpnAdvFacadeService"
+		owner="liangjunhui" version="1.0.0" />
+
+	<dubbo:reference id="verifyFacadeService"
+		interface="com.zteingenico.eticket.business.facade.service.verify.IVerifyFacadeService"
+		owner="liangjunhui" version="1.0.0" />
+
+	<dubbo:reference id="paymentService"
+		interface="com.zteingenico.eticket.business.facade.service.payment.IBuyerPaymentFacadeService"
+		owner="wan.yu" version="1.0.0" />
+		
+		<dubbo:reference id="couponClassFacadeService"
+		interface="com.zteingenico.eticket.business.facade.service.coupon.ICouponClassFacadeService"
+		owner="liangjunhui" version="1.0.0" />
+		
+	<dubbo:reference id="sysCodeFacadeService"  
+		interface="com.zteingenico.eticket.business.facade.service.system.ISysCodeFacadeService" 
+		protocol="dubbo" owner="XieZhengGuang" version="1.0.0"/>	
+
+	<!-- 引入联盟方服务 -->
+	<dubbo:reference id="sysAreaFacadeService"  
+		interface="com.zteingenico.eticket.business.facade.service.system.ISysAreaFacadeService"
+		 protocol="dubbo" owner="liangjunhui" version="1.0.0"/>
+		 
+	<dubbo:reference id="sysLeaguePersonFacadeService" 
+		interface="com.zteingenico.eticket.business.facade.service.system.ISysLeaguePersonFacadeService"
+		 protocol="dubbo" owner="liangjunhui" version="1.0.0"/>
+		 
+	<dubbo:reference id="sysDataCodeFacadeService" 
+		interface="com.zteingenico.eticket.business.facade.service.system.ISysDataCodeFacadeService" 
+		protocol="dubbo" owner="liangjunhui" version="1.0.0"/>
+	<dubbo:reference id="sysOrgSinceFacadeService" 
+		interface="com.zteingenico.eticket.business.facade.service.system.ISysOrgSinceFacadeService" 
+		protocol="dubbo" owner="zhangwenhao" version="1.0.0"/>
+	<!-- 引入联盟方服务 -->
+	<!-- 引入地址服务 -->
+	<dubbo:reference id="ownerAddressFacadeService" 
+		interface="com.zteingenico.eticket.business.facade.service.logisticsorder.IOwnerAddressFacadeService" 
+		protocol="dubbo" owner="zhangwenhao" version="1.0.0" />
+	<dubbo:reference id="logisticsOrderFacadeService" 
+	    interface="com.zteingenico.eticket.business.facade.service.logisticsorder.ILogisticsOrderFacadeService" 
+		protocol="dubbo" owner="zhangwenhao" version="1.0.0" />
+	<dubbo:reference id="addressWeinxinService" 
+	    interface="com.zteingenico.eticket.business.facade.service.buyerportal.IAddressWeixinFacadeService" 
+		protocol="dubbo" owner="fananran" version="1.0.0" />
+		
+	<dubbo:reference id="lotteryFacadeService" 
+	    interface="com.zteingenico.eticket.business.facade.service.lottery.ILotteryFacadeService" 
+		protocol="dubbo" owner="fananran" version="1.0.0" />
+	<dubbo:reference id="cpnOrderLineFacadeService" 
+	    interface="com.zteingenico.eticket.business.facade.service.order.ICpnOrderLineFacadeService" 
+		protocol="dubbo" owner="chenxiaoling" version="1.0.0" />
+</beans>
